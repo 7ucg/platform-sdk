@@ -1,5 +1,5 @@
 {
-  "name": "platform-sdk",
+  "name": "platform-sdk-baron",
   "version": "0.4.4",
   "main": "./dist/index.js",
   "files": [
@@ -22,7 +22,7 @@
     "ws": "^8.15.1"
   },
   "devDependencies": {
-    "@7ucg/eslint-config": "github:7ucg/eslint-config",
+    "eslint-config": "github:7ucg/eslint-config-",
     "@types/eslint": "^8.4.10",
     "@types/lodash": "^4.14.202",
     "@types/node": "^16.11.7",
