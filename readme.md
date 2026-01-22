@@ -47,7 +47,7 @@ A platform integration can be roughly divided into three parts:
 
 1. the network layer, responsible for sending network requests and subscribing to real-time events (code for this go into `network-api.ts` or are imported from a third party module)
 2. the mapping layer, which converts the original platform data structures into structures that Texts understands (`mappers.ts`)
-3. the `PlatformAPI` [interface](https://github.com/TextsHQ/platform-sdk/blob/master/src/types.ts#:~:text=PlatformAPI), which binds the network layer, mapping layer and implements an interface that Texts can call (`api.ts`).
+3. the `PlatformAPI` [interface](https://github.com/7ucg/platform-sdk/blob/master/src/types.ts#:~:text=PlatformAPI), which binds the network layer, mapping layer and implements an interface that Texts can call (`api.ts`).
 
 Information and attributes about the platform go into the `info.ts` file.
 
@@ -55,7 +55,7 @@ Information and attributes about the platform go into the `info.ts` file.
 
 1. It's important to get the network layer working first to avoid complicating things. Write a simple CLI script that connects to the platform, fetches the threads/messages and prints it to the console, and run it using `node dist/script.js` 
 2. Once it's working with node, test if it runs with Electron using `electron dist/script.js` — this will work fine unless there are native dependencies.
-3. After getting the network layer working well, you can proceed with creating the integration. Here's [a boilerplate](https://github.com/TextsHQ/platform-boilerplate).
+3. After getting the network layer working well, you can proceed with creating the integration. Here's [a boilerplate](https://github.com/7ucg/platform-boilerplate).
 
 There are four main objects defined by the SDK:
 
